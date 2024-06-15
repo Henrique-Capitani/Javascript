@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+p{
+    font-family: cursive;
+    font-size: 11pt;
+    line-height: 22pt;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+img{
+    width: 500px;
+    height: 550px;
+
+}
+
+div{
+    text-align: center;
+}
+
+#camada{
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-out 1.5s;
+}
+
+#camada img{
+    width: 180px;
+    height:180px;
+}

@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    padding:10px 550px;
+    align-items: center;
+}
+#foto{
+    width: 90%;
+    padding:10px;
+}
+#foto img{
+    width: 100%;
+}
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border:1px solid #ddd;
+    font-weight:bold;
+    font-size:15pt;
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: brown;
+    color:white;
+}

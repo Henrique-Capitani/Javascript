@@ -1,0 +1,36 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+h1{
+    font-family: "arial";
+    font-size:20pt;
+    text-align: center;
+}
+.miniatura{
+    width:70vw;
+    height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px auto;
+    padding:10px;
+    border:1px solid silver;
+}
+.miniatura img{
+    width: 100px;
+    height: 120px;
+    margin:5px;
+    cursor: pointer;
+}
+
+.fullsize{
+    width: 50vw;
+    padding: 10px;
+    border: 1px solid silver;
+    margin: 0 auto;
+}
+.fullsize img{
+    width: 100%;
+}

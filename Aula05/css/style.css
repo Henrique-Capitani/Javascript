@@ -1,0 +1,20 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+#paleta{
+    width: 100vw;
+    height: 30vh;
+    border-bottom: 1px solid brown;
+}
+#painel{
+    width: 100vw;
+    height: 70vh;
+}
+td{
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}

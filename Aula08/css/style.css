@@ -1,0 +1,29 @@
+#um{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+#dois{
+    width: auto;
+    height: auto;
+    color: rgb(42, 165, 165);
+}
+#tres{
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    border: 1px solid black;
+}
+#quatro{
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 450px;
+    left: 1px;
+}

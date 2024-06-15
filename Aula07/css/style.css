@@ -1,0 +1,42 @@
+.divAzul{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+#fotos{
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+}
+#fotos img{
+    width: 28%;
+    margin: 10px;
+}
+#shadow{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shadow img{
+    width: 50%;
+}
+
+#close{
+    color: azure;
+    font-size: 20pt;
+    padding: 10px;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 2px;
+    position: absolute;
+    right: 30px;
+    top: 10px; 
+}

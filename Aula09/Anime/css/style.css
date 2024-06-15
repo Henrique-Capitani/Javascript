@@ -1,0 +1,9 @@
+.caixa{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.caixa .foto{
+    width: 100%;
+}
