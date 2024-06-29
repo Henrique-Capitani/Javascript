@@ -28,7 +28,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?language=pt-br&page=1&api_key=
         
         let votos = document.createElement("div");
         votos.setAttribute("class","votos")
-        votos.innerHTML = filme.vote_average;
+        votos.innerHTML = Math.round(filme.vote_average)+"%"; /* Math, uma Classe matematica usada para arredondar ou outras coisas, o M tem que ser maisculo */
 
         let titulo = document.createElement("h2");
         titulo.innerHTML = filme.title;
@@ -36,6 +36,62 @@ fetch("https://api.themoviedb.org/3/movie/popular?language=pt-br&page=1&api_key=
         let lancamento = document.createElement("p");
         lancamento.setAttribute("class","lancamento");
         lancamento.innerHTML=filme.release_date;
+
+        /* 
+        Vamos utilizar o comando substring, que 
+        nos ajuda a quebrar uma string com base na
+        posição do caracter e a quantidade de caracteres
+        Por Exemplo: 2024-06-13. para pegar os 
+        4 primeiros digitos usamos: substring (0,4)
+        */
+
+        let ano =  filme.release_date.substring(0,4);
+        let mes =  filme.release_date.substring(5,7);
+        let dia =  filme.release_date.substring(8,10);
+
+        switch(mes){
+            case "01":
+                mes = "jan";
+                break;
+            case "02":
+                mes = "fev";
+                break;
+            case "03":
+                mes = "mar";
+                break;
+            case "04":
+                mes = "abr";
+                break;
+            case "05":
+                mes = "mai";
+                break;
+            case "06":
+                mes = "jun";
+                break;      
+            case "07":
+                mes = "jul";
+                break;
+            case "08":
+                mes = "ago";
+                break;
+            case "09":
+                mes = "set";
+                break;
+            case "10":
+                mes = "out";
+                break;
+            case "11":
+                mes = "nov";
+                break;
+            default:
+                mes = "dez";
+                break                    
+        }
+
+
+        lancamento.innerHTML = `dia ${dia} de ${mes} de ${ano}`;
+
+
 
         cartaz.appendChild(poster);
         cartaz.appendChild(votos);
