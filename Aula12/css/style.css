@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#nav{
+    background-color: #64b5f6;
+    position: absolute;
+    width: 100vw;
+    top: -65px;
+    transition: ease-out 1s;
+}
+#nav nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+#nav nav ul li{
+    margin-right: 20px;
+}
+#nav nav ul li a{
+    font-family: arial;
+    font-size: 10pt;
+    text-decoration: none;
+    color: azure;
+}
+#buscar{
+    width: 500px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: black;
+    border: 1px;
+    border-radius: 5px;
+    outline: 1px solid whitesmoke;
+    color: azure;
+}
+button{
+    padding: 5px;
+    border: 0px;
+    background-color: #0288d1;
+    cursor: pointer;
+    color: azure;
+}
+#fechar{
+    color: azure;
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    font-size: 20pt;
+    font-family: arial;
+}
+#menu{
+    text-decoration: none;
+    color: black;
+    font-size: 15pt;
+    font-family: Arial;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: ease 0.5s;
+}
+#menu:hover{
+    margin-left: 15pt;
+    color: blue;
+    text-shadow: 0px 0px 5px black;
+}
+#listar,#resultado,#inserir{
+    width: 80vw;
+    border: 1px solid black;
+    margin: 150px auto;
+}
+#listarlivros{
+    display: flex;
+    flex-wrap:wrap;
+}
+.caixa{
+    width: 30%;
+    margin: 10%;
+}
+.caixa img{
+    width: 100%;
+}
+h4{
+    font-family: fantasy;
+    font-size: 20pt;
+    margin: 15px;
+    color: black;
+}
+.preco{
+    font-family: cursive;
+    font-size: 12pt;
+    margin: 15px;
+    color: #757575; 
+}
+h5{
+    font-family: cursive;
+    font-size: 15pt;
+    margin: 15px;
+    color: #424242;
+}
+
+#inserir form{
+    width: 60%;
+    margin: 10px auto;
+    padding: 10px;
+}
+#inserir input[type="text"], 
+#inserir select, 
+#inserir textarea{
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #64b5f6;
+    border-bottom: 1px solid #64b5f6;
+    margin-bottom: 10px;
+    font-size: 12pt;
+    outline: none;
+}
+#txtpreco{
+    width: 40% !important;
+}
+#txtgenero{
+    width: 40% !important;
+}
+#txtsinopse{
+    height: 200px;
+    resize: none; /* Bloqueia o redimensionamento */
+    width: 95%;
+}

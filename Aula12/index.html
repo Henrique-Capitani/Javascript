@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body onload="listar();"> 
+    <a href="#" id="menu"> ≡ Menu </a>
+    <div id="nav">
+        <a href="#" id="fechar"> &times; </a>
+        <nav>
+            <ul>
+                <li> <a href="#" id="home">Home</a></li>
+                <li><a href="#" id="cadastrar" ondblclick="abrircadastrar()">Cadastrar</a></li>
+                <li>
+ 
+                    <form><input type="search" id="buscar" placeholder="Buscar livro">
+                        <button onclick="resultado();">Buscar</button>
+                    </form>
+ 
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="listar">
+        <h3>Livros em destaque</h3>
+        <div id="listarlivros"></div>
+    </section>
+
+    <section id="resultado">
+        <div class="resultadobusca"></div>
+    </section>
+    <section id="inserir">
+        <h3>Cadastrar Livros</h3>
+        <form>
+            <input type="text" id="txttitulo" placeholder="Título do livro">
+            <input type="text" id="txtautor" placeholder="Autor">
+            <input type="text" id="txtpreco" placeholder="Preço">
+            <input type="text" id="txtfoto1" placeholder="Foto do livro">
+            <input type="text" id="txtfoto2" placeholder="Foto do livro">
+            <select id="txtgenero">
+                <option value="Selecione"> Selecione </option>
+                <option value="Romance"> Romance </option>
+                <option value="Religião"> Religião </option>
+                <option value="Autoajuda"> Auto Ajuda </option>
+                <option value="Drama"> Drama </option>
+                <option value="Biografia"> Biografia </option>
+            </select>
+            <textarea id="txtsinopse">Escreva a sinopse aqui</textarea>
+            <button onclick="inserir()">Cadastrar</button>
+        </form> 
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
